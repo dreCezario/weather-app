@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import sun from '../assets/icons/sun.png'
 import cloud from '../assets/icons/cloud.png'
@@ -46,7 +46,7 @@ const MiniCard = ({time, temp, iconString}) => {
       <hr />
 
       <div className='w-full flex justify-center items-center flex-1'>
-        <img src={icon} alt="weather" className='w-[4rem] h-[4rem]' />
+        <img src={icon} alt="forecast not available" className='w-[4rem] h-[4rem]' />
       </div>
 
       <p className='text-center font-bold'>{temp}&deg;C</p>

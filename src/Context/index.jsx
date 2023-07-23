@@ -67,6 +67,7 @@ export const StateContextProvider = ({children}) => {
             setPlace,
             values,
             location,
+            place,
         }}> 
             {children}
         </StateContext.Provider>
